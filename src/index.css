@@ -8,6 +8,83 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  white-space: pre-wrap;
+  tab-size: 4;
+  background-color: white;
+  display: block;
+  padding: 1rem;
+  border: 0.1rem solid rgb(218, 218, 218);
+}
+
+input {
+  outline: none;
+  width: 3rem;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 0.13rem solid rgb(177, 177, 177);
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background-color: rgb(60, 116, 168);
+  color: white;
+  cursor: pointer;
+}
+
+.box {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #292929;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+input.waiting {
+  border-bottom: inherit;
+}
+
+input.success {
+  border-bottom: 0.13rem solid rgb(53, 173, 63);
+}
+
+input.fail {
+  border-bottom: 0.13rem solid rgb(207, 64, 64);
+}
+
+.waiting {
+  color: inherit;
+}
+
+.success {
+  color: rgb(53, 173, 63);
+}
+
+.fail {
+  color: rgb(207, 64, 64);
 }
