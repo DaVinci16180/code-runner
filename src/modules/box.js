@@ -18,18 +18,21 @@ const Box = ({ children, statement, verify }) => {
   return (
     <div className='wrapper'>
         <div className='box'>
-            <div>
+            <div className='box-header'>
+                Preencha as lacunas com as palavras reservadas apropriadas.
+            </div>
+            <div className='box-body'>
                 <p>
                     <span className='bold'>Q: </span>
                     { statement }
                 </p>
+                { Children.map(children, child =>
+                    <code>
+                        { child }
+                    </code>
+                )}
             </div>
-            { Children.map(children, child =>
-                <code>
-                    { child }
-                </code>
-            )}
-            <div className='footer'>
+            <div className='box-footer'>
                 <div>
                     <i className={ `${icon[status]}` }></i>
                     { status == 'success' && <span> Tudo certo, parabéns!</span> }
